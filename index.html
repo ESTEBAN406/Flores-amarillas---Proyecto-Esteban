@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi amor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap'); /* Fuente personalizada */
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('img/flor1.jpeg') no-repeat center center/cover;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 8vw; /* Tamaño de fuente relativo al ancho de la ventana */
+            animation: fadeInOut 3s infinite; /* Animación suave */
+        }
+
+        h2 {
+            font-size: 5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+            animation: pulse 2s infinite; /* Pequeño efecto de pulsación */
+        }
+
+        /* Contenedor principal centrado */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* Asegura que el texto y el botón estén centrados */
+            position: relative;
+        }
+
+        button {
+            font-family: 'Dancing Script', cursive; /* Cambiar la fuente del botón */
+            font-size: 4vw; /* Tamaño de fuente relativo al ancho de la ventana */
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            background-color: #ff3366;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden; /* Para asegurar que el contenido del botón no se desborde */
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MI AMOR💕</h1>
+        <h2>Tengo un regalo para ti 😍💝</h2>
+        <button onclick="window.location.href='rosas.html'">Ver regalo</button>
+    </div>
+</body>
+
+</html>
