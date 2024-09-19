@@ -491,6 +491,23 @@
             audio.muted = false; // Desmutear el audio
           });
         </script>
+
+        <audio id="background-music" autoplay loop>
+  <source src="audio/Canción perfecta para el amor de tu vida.mp3" type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+  // Reproducir audio sin sonido inicial
+  var audio = document.getElementById('background-music');
+  audio.volume = 0; // Iniciar con volumen en 0
+
+  // Añadir un evento de clic para activar el sonido
+  document.addEventListener('click', function() {
+    audio.volume = 1; // Restablecer el volumen
+  }, { once: true });
+</script>
+
         
   </body>
 
