@@ -479,10 +479,18 @@
           </path>
         </svg>
 
-        <audio id="background-music" autoplay loop>
+        <audio id="background-music" autoplay muted loop>
           <source src="audio/Canción perfecta para el amor de tu vida.mp3" type="audio/mpeg">
           Tu navegador no soporta el elemento de audio.
         </audio>
+        
+        <script>
+          // Eventual lógica para quitar el silencio y permitir el sonido
+          document.addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            audio.muted = false; // Desmutear el audio
+          });
+        </script>
         
   </body>
 
